@@ -27,15 +27,18 @@ export const QueryArea = (props: QueryAreaProps) => {
 
     queryString += "(";
     for (const entry of props.columnList) {
+      if (entry.query === "") {
+        continue;
+      }
       const index = props.columnList.indexOf(entry);
       if (index > 0) {
-        queryString += " ";
+        queryString += ", ";
       }
       if (entry.query === "Between") {
         queryString += entry.type;
         queryString += " start";
         queryString += capitalizeFirstLetter(entry.name);
-        queryString += " ";
+        queryString += ", ";
         queryString += entry.type;
         queryString += " end";
         queryString += capitalizeFirstLetter(entry.name);

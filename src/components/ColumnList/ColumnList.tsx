@@ -80,6 +80,8 @@ export const ColumnList = () => {
       andOr: columnList.length === 0 ? "" : "And",
     };
     setColumnList([...columnList, newColumn]);
+    setColumnName("");
+    setColumnType("");
   };
 
   const typeLabel = (typeName: string) => {
