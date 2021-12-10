@@ -1,0 +1,49 @@
+.column-list-form-control {
+    justify-content: center;
+    margin-bottom: 30px
+}
+
+.column-list-list-holder{
+    margin-top: 30px;
+}
+
+.column-list-name{
+    font-size: 20px;
+    height: 54px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 5px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column-list-type{
+    font-size: 20px;
+    height: 54px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 5px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column-list-list-row {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-list-list-row > * {
+    margin: 0 10px;
+}
+
+.column-list-spacer {
+    width: 107px;
+}

@@ -1,0 +1,11 @@
+.query-area-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.query-area {
+    height: 400px;
+    width: 600px;
+    border: 1px solid gray;
+    overflow-wrap: break-word;
+}
