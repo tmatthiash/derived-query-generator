@@ -133,6 +133,11 @@ export const ColumnList = () => {
           <MenuItem value="Before">Is Before</MenuItem>,
           <MenuItem value="Between">Is Between</MenuItem>,
         ];
+      case "Collection":
+        return [
+          <MenuItem value="In">Is In</MenuItem>,
+          <MenuItem value="IsIn">Is Not In</MenuItem>,
+        ];
     }
   };
 
@@ -150,7 +155,7 @@ export const ColumnList = () => {
         />
         <TextField
           select
-          label="Data Type"
+          label="Query Data Type"
           value={columnType}
           onChange={handleTypeChange}
           sx={{
@@ -161,6 +166,7 @@ export const ColumnList = () => {
           <MenuItem value="String">VarChar</MenuItem>
           <MenuItem value="Date">Date</MenuItem>
           <MenuItem value="Boolean">Boolean</MenuItem>
+          <MenuItem value="Collection">Collection</MenuItem>
         </TextField>
         <Button variant="contained" onClick={addColumn}>
           Add To List

@@ -45,6 +45,10 @@ export const QueryArea = (props: QueryAreaProps) => {
         continue;
       }
       queryString += entry.type;
+      if (entry.type === "Collection") {
+        queryString += "<" + entry.name + ">";
+      }
+
       queryString += " ";
       queryString += entry.name;
     }
