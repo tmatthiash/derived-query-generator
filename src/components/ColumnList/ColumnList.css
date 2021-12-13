@@ -4,7 +4,7 @@
 }
 
 .column-list-list-holder{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .column-list-name{
@@ -46,4 +46,9 @@
 
 .column-list-spacer {
     width: 107px;
+}
+
+.query-area-holder {
+    flex-direction: column;
+    align-items: center;
 }

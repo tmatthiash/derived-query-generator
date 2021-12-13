@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import { Column } from "../types/Column";
 import "./QueryArea.css";
 
@@ -11,6 +12,9 @@ export const QueryArea = (props: QueryAreaProps) => {
   };
 
   const queryBuilder = () => {
+    if (props.columnList.length === 0) {
+      return "Add at least query for the function name to be displayed.";
+    }
     let queryString = "findBy";
 
     for (const entry of props.columnList) {
@@ -56,9 +60,22 @@ export const QueryArea = (props: QueryAreaProps) => {
     return queryString;
   };
 
+  const clickCopy = () => {
+    navigator.clipboard.writeText(queryBuilder());
+  };
+
   return (
     <div className="query-area-holder">
       <div className="query-area">{queryBuilder()}</div>
+      <Button
+        variant="contained"
+        onClick={clickCopy}
+        sx={{
+          width: 200,
+        }}
+      >
+        Copy To CLipboard
+      </Button>
     </div>
   );
 };

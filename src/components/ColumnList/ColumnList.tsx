@@ -71,6 +71,9 @@ export const ColumnList = () => {
   };
 
   const addColumn = () => {
+    if (columnName === "" || columnType === "") {
+      return;
+    }
     const newColumn: Column = {
       id: uuidv4(),
       name: columnName,

@@ -4,7 +4,7 @@
 }
 
 .query-area {
-    height: 400px;
+    height: 200px;
     width: 600px;
     border: 1px solid gray;
     overflow-wrap: break-word;
