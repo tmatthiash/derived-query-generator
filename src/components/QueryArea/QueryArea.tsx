@@ -72,6 +72,7 @@ export const QueryArea = (props: QueryAreaProps) => {
         onClick={clickCopy}
         sx={{
           width: 200,
+          marginTop: "10px",
         }}
       >
         Copy To CLipboard

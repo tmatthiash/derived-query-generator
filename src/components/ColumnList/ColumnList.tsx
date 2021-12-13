@@ -139,7 +139,7 @@ export const ColumnList = () => {
       case "Collection":
         return [
           <MenuItem value="In">Is In</MenuItem>,
-          <MenuItem value="IsIn">Is Not In</MenuItem>,
+          <MenuItem value="NotIn">Is Not In</MenuItem>,
         ];
     }
   };
