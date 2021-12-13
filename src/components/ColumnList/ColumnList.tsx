@@ -160,6 +160,7 @@ export const ColumnList = () => {
           onChange={handleTypeChange}
           sx={{
             width: 300,
+            margin: "0 20px",
           }}
         >
           <MenuItem value="Integer">Integer</MenuItem>
