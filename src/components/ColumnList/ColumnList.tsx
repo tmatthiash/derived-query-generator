@@ -7,6 +7,7 @@ import {
   Switch,
   TextField,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import { ChangeEvent, useState } from "react";
 import { Column } from "../types/Column";
@@ -94,6 +95,10 @@ export const ColumnList = () => {
     return typeName;
   };
 
+  const isMobile = () => {
+    return !useMediaQuery("(min-width:600px)");
+  };
+
   const getMenuItems = (type: string) => {
     switch (type) {
       case "String":
@@ -148,22 +153,31 @@ export const ColumnList = () => {
     <div>
       <FormControl
         className="column-list-form-control"
-        sx={{ display: "flex", flexDirection: "row" }}
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: () => (isMobile() ? "column" : "row"),
+        }}
       >
         <TextField
           label="Additional Column Name"
           variant="outlined"
           value={columnName}
           onChange={(e) => handleNameChange(e)}
+          size={isMobile() ? "small" : "medium"}
+          sx={{
+            width: 235,
+          }}
         />
         <TextField
           select
           label="Query Data Type"
           value={columnType}
           onChange={handleTypeChange}
+          size={isMobile() ? "small" : "medium"}
           sx={{
-            width: 300,
-            margin: "0 20px",
+            margin: () => (isMobile() ? "5px 0" : "0 20px"),
+            width: 235,
           }}
         >
           <MenuItem value="Integer">Integer</MenuItem>
@@ -172,7 +186,13 @@ export const ColumnList = () => {
           <MenuItem value="Boolean">Boolean</MenuItem>
           <MenuItem value="Collection">Collection</MenuItem>
         </TextField>
-        <Button variant="contained" onClick={addColumn}>
+        <Button
+          variant="contained"
+          onClick={addColumn}
+          sx={{
+            width: 123,
+          }}
+        >
           Add To List
         </Button>
       </FormControl>
