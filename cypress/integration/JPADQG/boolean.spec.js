@@ -6,7 +6,7 @@ describe('VarChar Test', () => {
     })
 
     it('Fills in the column name', () => {
-        cy.get('input[type=text]').first().type('firstName');
+        cy.get('input[type=text]').first().type('isActive');
     })
 
     it('Sets the type to Integer', () => {

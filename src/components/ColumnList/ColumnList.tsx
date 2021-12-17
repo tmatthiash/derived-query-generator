@@ -160,7 +160,7 @@ export const ColumnList = () => {
         }}
       >
         <TextField
-          label="Additional Column Name"
+          label="Additional Field Name"
           variant="outlined"
           value={columnName}
           onChange={(e) => handleNameChange(e)}
