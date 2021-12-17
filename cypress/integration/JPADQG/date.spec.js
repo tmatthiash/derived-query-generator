@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('VarChar Test', () => {
+describe('Date Test', () => {
     it('Visits the website', () => {
       cy.visit('http://localhost:3000')
     })
@@ -24,6 +24,6 @@ describe('VarChar Test', () => {
     })
 
     it('Should have the correct query in the query area', () => {
-        cy.contains('findByFirstNameBetween(Date startFirstName, Date endFirstName)').should('exist');
+        cy.contains('findBySignUpDateBetween(Date startSignUpDate, Date endSignUpDate)').should('exist');
     })
   })

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('VarChar Test', () => {
+describe('Integer Test', () => {
     it('Visits the website', () => {
       cy.visit('http://localhost:3000')
     })
@@ -24,6 +24,6 @@ describe('VarChar Test', () => {
     })
 
     it('Should have the correct query in the query area', () => {
-        cy.contains('findByFirstNameLessThanEqual(Integer firstName)').should('exist');
+        cy.contains('findByCountLessThanEqual(Integer count)').should('exist');
     })
   })

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('VarChar Test', () => {
+describe('Boolean Test', () => {
     it('Visits the website', () => {
       cy.visit('http://localhost:3000')
     })
@@ -24,6 +24,6 @@ describe('VarChar Test', () => {
     })
 
     it('Should have the correct query in the query area', () => {
-        cy.contains('findByFirstNameTrue()(Boolean firstName)').should('exist');
+        cy.contains('findByIsActiveTrue()(Boolean isActive)').should('exist');
     })
   })
