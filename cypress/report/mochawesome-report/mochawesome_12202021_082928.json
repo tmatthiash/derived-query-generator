@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-20T14:29:25.119Z",
+    "end": "2021-12-20T14:29:28.795Z",
+    "duration": 3676,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "63e5ad4f-4036-460a-9848-a8918f1e96aa",
+      "title": "",
+      "fullFile": "cypress/integration/JPADQG/integer.spec.js",
+      "file": "cypress/integration/JPADQG/integer.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "52e3ac96-66f5-474d-a355-e26580e95a62",
+          "title": "Integer Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visits the website",
+              "fullTitle": "Integer Test Visits the website",
+              "timedOut": null,
+              "duration": 1147,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000');",
+              "err": {},
+              "uuid": "a1ddfd7a-8892-471d-9421-e99b0005c5f3",
+              "parentUUID": "52e3ac96-66f5-474d-a355-e26580e95a62",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Fills in the column name",
+              "fullTitle": "Integer Test Fills in the column name",
+              "timedOut": null,
+              "duration": 370,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[type=text]').first().type('count');",
+              "err": {},
+              "uuid": "3ad30f5d-1686-4e64-91c4-d6be5f67766b",
+              "parentUUID": "52e3ac96-66f5-474d-a355-e26580e95a62",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Sets the type to Integer",
+              "fullTitle": "Integer Test Sets the type to Integer",
+              "timedOut": null,
+              "duration": 345,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.MuiSelect-select').click();\ncy.contains('Integer').click();",
+              "err": {},
+              "uuid": "d71e9b02-580f-4db0-8af9-e7e4d9e14297",
+              "parentUUID": "52e3ac96-66f5-474d-a355-e26580e95a62",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Adds to list",
+              "fullTitle": "Integer Test Adds to list",
+              "timedOut": null,
+              "duration": 389,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Add To List').click();",
+              "err": {},
+              "uuid": "a8530629-feb7-4e8b-a4ef-01612f18a3a0",
+              "parentUUID": "52e3ac96-66f5-474d-a355-e26580e95a62",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Sets the query type to is/equals",
+              "fullTitle": "Integer Test Sets the query type to is/equals",
+              "timedOut": null,
+              "duration": 399,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.MuiSelect-select').eq(1).click();\ncy.contains('Is Less Than or Equal to').click();",
+              "err": {},
+              "uuid": "dd6b5a34-8ac9-4c10-84df-242973fcad3e",
+              "parentUUID": "52e3ac96-66f5-474d-a355-e26580e95a62",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should have the correct query in the query area",
+              "fullTitle": "Integer Test Should have the correct query in the query area",
+              "timedOut": null,
+              "duration": 38,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('findByCountLessThanEqual(Integer count)').should('exist');",
+              "err": {},
+              "uuid": "b17239e2-5655-497c-a6fa-01c6fe60f217",
+              "parentUUID": "52e3ac96-66f5-474d-a355-e26580e95a62",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a1ddfd7a-8892-471d-9421-e99b0005c5f3",
+            "3ad30f5d-1686-4e64-91c4-d6be5f67766b",
+            "d71e9b02-580f-4db0-8af9-e7e4d9e14297",
+            "a8530629-feb7-4e8b-a4ef-01612f18a3a0",
+            "dd6b5a34-8ac9-4c10-84df-242973fcad3e",
+            "b17239e2-5655-497c-a6fa-01c6fe60f217"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2688,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.0.1"
+    }
+  }
+}

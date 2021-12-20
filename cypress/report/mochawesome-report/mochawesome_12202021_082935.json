@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-20T14:29:31.503Z",
+    "end": "2021-12-20T14:29:35.265Z",
+    "duration": 3762,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a907df6c-4ddd-42cb-bc43-6eb795421f3f",
+      "title": "",
+      "fullFile": "cypress/integration/JPADQG/varchar.spec.js",
+      "file": "cypress/integration/JPADQG/varchar.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b4e8ca58-89bf-4407-8b10-9494c3ada349",
+          "title": "VarChar Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visits the website",
+              "fullTitle": "VarChar Test Visits the website",
+              "timedOut": null,
+              "duration": 1169,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000');",
+              "err": {},
+              "uuid": "ce5a5e2d-3edb-4a32-8211-782d1523b263",
+              "parentUUID": "b4e8ca58-89bf-4407-8b10-9494c3ada349",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Fills in the column name",
+              "fullTitle": "VarChar Test Fills in the column name",
+              "timedOut": null,
+              "duration": 479,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[type=text]').first().type('firstName');",
+              "err": {},
+              "uuid": "331e319b-7ff9-4967-9fa4-215e70c0c383",
+              "parentUUID": "b4e8ca58-89bf-4407-8b10-9494c3ada349",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Sets the type to varchar",
+              "fullTitle": "VarChar Test Sets the type to varchar",
+              "timedOut": null,
+              "duration": 329,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.MuiSelect-select').click();\ncy.contains('VarChar').click();",
+              "err": {},
+              "uuid": "6d99089a-e4f9-4972-9644-51bcbb7ea0b9",
+              "parentUUID": "b4e8ca58-89bf-4407-8b10-9494c3ada349",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Adds to list",
+              "fullTitle": "VarChar Test Adds to list",
+              "timedOut": null,
+              "duration": 397,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Add To List').click();",
+              "err": {},
+              "uuid": "79f9fa1c-23e7-4741-bc4f-0d124f9675fa",
+              "parentUUID": "b4e8ca58-89bf-4407-8b10-9494c3ada349",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Sets the query type to is/equals",
+              "fullTitle": "VarChar Test Sets the query type to is/equals",
+              "timedOut": null,
+              "duration": 345,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.MuiSelect-select').eq(1).click();\ncy.contains('Is / Equals').click();",
+              "err": {},
+              "uuid": "3a53eb9c-e774-421a-8d02-5238aaa6aee4",
+              "parentUUID": "b4e8ca58-89bf-4407-8b10-9494c3ada349",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should have the correct query in the query area",
+              "fullTitle": "VarChar Test Should have the correct query in the query area",
+              "timedOut": null,
+              "duration": 26,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('findByFirstNameIsIgnoreCase(String firstName)').should('exist');",
+              "err": {},
+              "uuid": "a8566a72-05f6-4091-8ad9-25562fe5a564",
+              "parentUUID": "b4e8ca58-89bf-4407-8b10-9494c3ada349",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ce5a5e2d-3edb-4a32-8211-782d1523b263",
+            "331e319b-7ff9-4967-9fa4-215e70c0c383",
+            "6d99089a-e4f9-4972-9644-51bcbb7ea0b9",
+            "79f9fa1c-23e7-4741-bc4f-0d124f9675fa",
+            "3a53eb9c-e774-421a-8d02-5238aaa6aee4",
+            "a8566a72-05f6-4091-8ad9-25562fe5a564"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2745,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.0.1"
+    }
+  }
+}
