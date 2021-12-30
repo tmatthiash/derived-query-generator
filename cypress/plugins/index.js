@@ -22,6 +22,7 @@ module.exports = (on, config) => {
   if (config.testingType === 'component') {
     require('@cypress/react/plugins/react-scripts')(on, config)
   }
+  require('@cypress/code-coverage/task')(on, config)
 
   return config
 }

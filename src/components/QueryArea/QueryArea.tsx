@@ -66,7 +66,9 @@ export const QueryArea = (props: QueryAreaProps) => {
 
   return (
     <div className="query-area-holder">
-      <div className="query-area">{queryBuilder()}</div>
+      <div className="query-area" data-testid="query-area">
+        {queryBuilder()}
+      </div>
       <Button
         variant="contained"
         onClick={clickCopy}

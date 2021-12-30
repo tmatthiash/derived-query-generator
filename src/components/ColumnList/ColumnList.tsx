@@ -3,7 +3,6 @@ import {
   FormControl,
   FormControlLabel,
   MenuItem,
-  Stack,
   Switch,
   TextField,
   Typography,
@@ -103,48 +102,102 @@ export const ColumnList = () => {
     switch (type) {
       case "String":
         return [
-          <MenuItem value="Is">Is / Equals</MenuItem>,
-          <MenuItem value="Not">Is Not</MenuItem>,
-          <MenuItem value="(Is)Null">Is Null</MenuItem>,
-          <MenuItem value="(Is)NotNull">Is Not Null</MenuItem>,
-          <MenuItem value="Like">Is Like</MenuItem>,
-          <MenuItem value="NotLike">Is Not Like</MenuItem>,
-          <MenuItem value="StartingWith">Starts With</MenuItem>,
-          <MenuItem value="EndingWith">Ends With</MenuItem>,
-          <MenuItem value="Containing">Contains</MenuItem>,
+          <MenuItem key={1} value="Is">
+            Is / Equals
+          </MenuItem>,
+          <MenuItem key={2} value="Not">
+            Is Not
+          </MenuItem>,
+          <MenuItem key={3} value="(Is)Null">
+            Is Null
+          </MenuItem>,
+          <MenuItem key={4} value="(Is)NotNull">
+            Is Not Null
+          </MenuItem>,
+          <MenuItem key={5} value="Like">
+            Is Like
+          </MenuItem>,
+          <MenuItem key={6} value="NotLike">
+            Is Not Like
+          </MenuItem>,
+          <MenuItem key={7} value="StartingWith">
+            Starts With
+          </MenuItem>,
+          <MenuItem key={8} value="EndingWith">
+            Ends With
+          </MenuItem>,
+          <MenuItem key={9} value="Containing">
+            Contains
+          </MenuItem>,
         ];
       case "Boolean":
         return [
-          <MenuItem value="(Is)Null">Is Null</MenuItem>,
-          <MenuItem value="(Is)NotNull">Is Not Null</MenuItem>,
-          <MenuItem value="True()">Is True</MenuItem>,
-          <MenuItem value="False()">Is False</MenuItem>,
+          <MenuItem key={1} value="(Is)Null">
+            Is Null
+          </MenuItem>,
+          <MenuItem key={2} value="(Is)NotNull">
+            Is Not Null
+          </MenuItem>,
+          <MenuItem key={3} value="True()">
+            Is True
+          </MenuItem>,
+          <MenuItem key={4} value="False()">
+            Is False
+          </MenuItem>,
         ];
       case "Integer":
         return [
-          <MenuItem value="Is">Is / Equals</MenuItem>,
-          <MenuItem value="(Is)Null">Is Null</MenuItem>,
-          <MenuItem value="(Is)NotNull">Is Not Null</MenuItem>,
-          <MenuItem value="LessThan">Is Less Than</MenuItem>,
-          <MenuItem value="LessThanEqual">Is Less Than or Equal to</MenuItem>,
-          <MenuItem value="GreaterThan">Is Greater Than</MenuItem>,
-          <MenuItem value="GreaterThanEqual">
+          <MenuItem key={1} value="Is">
+            Is / Equals
+          </MenuItem>,
+          <MenuItem key={2} value="(Is)Null">
+            Is Null
+          </MenuItem>,
+          <MenuItem key={3} value="(Is)NotNull">
+            Is Not Null
+          </MenuItem>,
+          <MenuItem key={4} value="LessThan">
+            Is Less Than
+          </MenuItem>,
+          <MenuItem key={5} value="LessThanEqual">
+            Is Less Than or Equal to
+          </MenuItem>,
+          <MenuItem key={6} value="GreaterThan">
+            Is Greater Than
+          </MenuItem>,
+          <MenuItem key={7} value="GreaterThanEqual">
             Is Greater Than or Equal to
           </MenuItem>,
         ];
       case "Date":
         return [
-          <MenuItem value="Is">Is / Equals</MenuItem>,
-          <MenuItem value="(Is)Null">Is Null</MenuItem>,
-          <MenuItem value="(Is)NotNull">Is Not Null</MenuItem>,
-          <MenuItem value="After">Is After</MenuItem>,
-          <MenuItem value="Before">Is Before</MenuItem>,
-          <MenuItem value="Between">Is Between</MenuItem>,
+          <MenuItem key={1} value="Is">
+            Is / Equals
+          </MenuItem>,
+          <MenuItem key={2} value="(Is)Null">
+            Is Null
+          </MenuItem>,
+          <MenuItem key={3} value="(Is)NotNull">
+            Is Not Null
+          </MenuItem>,
+          <MenuItem key={4} value="After">
+            Is After
+          </MenuItem>,
+          <MenuItem key={5} value="Before">
+            Is Before
+          </MenuItem>,
+          <MenuItem key={6} value="Between">
+            Is Between
+          </MenuItem>,
         ];
       case "Collection":
         return [
-          <MenuItem value="In">Is In</MenuItem>,
-          <MenuItem value="NotIn">Is Not In</MenuItem>,
+          <MenuItem key={1} value="In">
+            Is In
+          </MenuItem>,
+          <MenuItem key={2} value="NotIn">
+            Is Not In
+          </MenuItem>,
         ];
     }
   };
@@ -214,6 +267,7 @@ export const ColumnList = () => {
             <div className="column-list-name">{entry.name}</div>
             <div className="column-list-type">{typeLabel(entry.type)}</div>
             <TextField
+              key={`${entry.id}-textfield`}
               select
               label="Query Type"
               value={entry.query}
